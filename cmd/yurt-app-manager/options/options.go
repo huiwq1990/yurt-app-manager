@@ -55,7 +55,7 @@ func ValidateOptions(options *YurtAppOptions) error {
 	return nil
 }
 
-// AddFlags returns flags for a specific yurthub by section name
+// AddFlags returns flags for a specific uniteddeployment by section name
 func (o *YurtAppOptions) AddFlags(fs *pflag.FlagSet) {
 	fs.StringVar(&o.MetricsAddr, "metrics-addr", o.MetricsAddr, "The address the metric endpoint binds to.")
 	fs.StringVar(&o.PprofAddr, "pprof-addr", o.PprofAddr, "The address the pprof binds to.")
